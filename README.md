@@ -30,23 +30,32 @@ Interact dynamically with your mouse or touch to explore the visual effects! Mov
    ```
 
 ## 📂 Project Structure
-```text
-aetrux/
-├── .vercel/
-├── assets/
-├── font/
-│   └── termina-test/
-├── public/
-│   └── videos/
-└── src/
-    ├── components/
-    │   └── ui/
-    ├── data/
-    ├── hooks/
-    ├── lib/
-    ├── pages/
-    └── test/
-```
+
+- 📁 **.vercel/**
+- 📁 **assets/**
+- 📁 **font/**
+- 📁 **public/**
+- 📁 **src/**
+- 📄 `.gitattributes`
+- 📄 `.gitignore`
+- 📄 `.lov.tailwind.config.js`
+- 📄 `bun.lock`
+- 📄 `components.json`
+- 📄 `eslint.config.js`
+- 📄 `index.html`
+- 📄 `package-lock.json`
+- 📄 `package.json`
+- 📄 `postcss.config.js`
+- 📄 `README.md`
+- 📄 `tailwind.config.ts`
+- 📄 `tsconfig.app.json`
+- 📄 `tsconfig.app.tsbuildinfo`
+- 📄 `tsconfig.json`
+- 📄 `tsconfig.node.json`
+- 📄 `tsconfig.node.tsbuildinfo`
+- 📄 `vite.config.ts`
+- 📄 `vite.config.ts.timestamp-1772979479057-9d41e9ee57b05.mjs`
+- 📄 `vitest.config.ts`
 
 ## 💻 Tech Stack
 HTML5 & CSS3: Structural vectors and custom styling variables.
