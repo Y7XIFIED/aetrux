@@ -30,32 +30,157 @@ Interact dynamically with your mouse or touch to explore the visual effects! Mov
    ```
 
 ## 📂 Project Structure
-
-- 📁 **.vercel/**
-- 📁 **assets/**
-- 📁 **font/**
-- 📁 **public/**
-- 📁 **src/**
-- 📄 `.gitattributes`
-- 📄 `.gitignore`
-- 📄 `.lov.tailwind.config.js`
-- 📄 `bun.lock`
-- 📄 `components.json`
-- 📄 `eslint.config.js`
-- 📄 `index.html`
-- 📄 `package-lock.json`
-- 📄 `package.json`
-- 📄 `postcss.config.js`
-- 📄 `README.md`
-- 📄 `tailwind.config.ts`
-- 📄 `tsconfig.app.json`
-- 📄 `tsconfig.app.tsbuildinfo`
-- 📄 `tsconfig.json`
-- 📄 `tsconfig.node.json`
-- 📄 `tsconfig.node.tsbuildinfo`
-- 📄 `vite.config.ts`
-- 📄 `vite.config.ts.timestamp-1772979479057-9d41e9ee57b05.mjs`
-- 📄 `vitest.config.ts`
+```text
+aetrux/
+├── .vercel
+│   ├── project.json
+│   └── README.txt
+├── assets
+│   ├── 1.jpg
+│   ├── 2.jpg
+│   ├── 3.jpg
+│   ├── 4.jpg
+│   ├── 404.jpg
+│   └── footer.png
+├── font
+│   └── termina-test
+│       ├── TerminaTest-Black.otf
+│       ├── TerminaTest-Bold.otf
+│       ├── TerminaTest-Demi.otf
+│       ├── TerminaTest-ExtraLight.otf
+│       ├── TerminaTest-Heavy.otf
+│       ├── TerminaTest-Light.otf
+│       ├── TerminaTest-Medium.otf
+│       ├── TerminaTest-Regular.otf
+│       └── TerminaTest-Thin.otf
+├── public
+│   ├── videos
+│   │   ├── lab-archive.mp4
+│   │   ├── lab-secure.mp4
+│   │   └── lab-telemetry.mp4
+│   ├── favicon.svg
+│   └── og-preview.jpg
+├── src
+│   ├── components
+│   │   ├── ui
+│   │   │   ├── accordion.tsx
+│   │   │   ├── alert-dialog.tsx
+│   │   │   ├── alert.tsx
+│   │   │   ├── aspect-ratio.tsx
+│   │   │   ├── avatar.tsx
+│   │   │   ├── badge.tsx
+│   │   │   ├── breadcrumb.tsx
+│   │   │   ├── button.tsx
+│   │   │   ├── calendar.tsx
+│   │   │   ├── card.tsx
+│   │   │   ├── carousel.tsx
+│   │   │   ├── chart.tsx
+│   │   │   ├── checkbox.tsx
+│   │   │   ├── collapsible.tsx
+│   │   │   ├── command.tsx
+│   │   │   ├── context-menu.tsx
+│   │   │   ├── dialog.tsx
+│   │   │   ├── drawer.tsx
+│   │   │   ├── dropdown-menu.tsx
+│   │   │   ├── form.tsx
+│   │   │   ├── hover-card.tsx
+│   │   │   ├── input-otp.tsx
+│   │   │   ├── input.tsx
+│   │   │   ├── label.tsx
+│   │   │   ├── menubar.tsx
+│   │   │   ├── navigation-menu.tsx
+│   │   │   ├── pagination.tsx
+│   │   │   ├── popover.tsx
+│   │   │   ├── progress.tsx
+│   │   │   ├── radio-group.tsx
+│   │   │   ├── resizable.tsx
+│   │   │   ├── scroll-area.tsx
+│   │   │   ├── select.tsx
+│   │   │   ├── separator.tsx
+│   │   │   ├── sheet.tsx
+│   │   │   ├── sidebar.tsx
+│   │   │   ├── skeleton.tsx
+│   │   │   ├── slider.tsx
+│   │   │   ├── sonner.tsx
+│   │   │   ├── switch.tsx
+│   │   │   ├── table.tsx
+│   │   │   ├── tabs.tsx
+│   │   │   ├── textarea.tsx
+│   │   │   ├── toast.tsx
+│   │   │   ├── toaster.tsx
+│   │   │   ├── toggle-group.tsx
+│   │   │   ├── toggle.tsx
+│   │   │   ├── tooltip.tsx
+│   │   │   └── use-toast.ts
+│   │   ├── AboutSection.tsx
+│   │   ├── AwardsSection.tsx
+│   │   ├── ContactOverlay.tsx
+│   │   ├── CounterStat.tsx
+│   │   ├── CursorSpotlight.tsx
+│   │   ├── CustomCursor.tsx
+│   │   ├── FloatingParticles.tsx
+│   │   ├── GrainOverlay.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── LaserFlow.tsx
+│   │   ├── LoadingScreen.tsx
+│   │   ├── MagneticButton.tsx
+│   │   ├── MarqueeStrip.tsx
+│   │   ├── NavLink.tsx
+│   │   ├── ProjectPage.tsx
+│   │   ├── ProjectsShowcase.tsx
+│   │   ├── ScrollProgress.tsx
+│   │   ├── ServicesSection.tsx
+│   │   ├── SmartImage.tsx
+│   │   ├── StickyNav.tsx
+│   │   ├── TestimonialsSection.tsx
+│   │   ├── ThemeControlPanel.tsx
+│   │   └── Y7XIFIEDFooter.tsx
+│   ├── data
+│   │   └── projects.ts
+│   ├── hooks
+│   │   ├── use-mobile.tsx
+│   │   ├── use-toast.ts
+│   │   ├── useKeyboardNav.ts
+│   │   ├── useLenis.ts
+│   │   ├── useSwipe.ts
+│   │   └── useTextScramble.ts
+│   ├── lib
+│   │   ├── api.ts
+│   │   └── utils.ts
+│   ├── pages
+│   │   ├── Index.tsx
+│   │   └── NotFound.tsx
+│   ├── scripts
+│   ├── styles
+│   ├── test
+│   │   ├── example.test.ts
+│   │   └── setup.ts
+│   ├── App.css
+│   ├── App.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   └── vite-env.d.ts
+├── .gitattributes
+├── .gitignore
+├── .lov.tailwind.config.js
+├── bun.lock
+├── components.json
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.ts
+├── tsconfig.app.json
+├── tsconfig.app.tsbuildinfo
+├── tsconfig.json
+├── tsconfig.node.json
+├── tsconfig.node.tsbuildinfo
+├── vite.config.ts
+├── vite.config.ts.timestamp-1772979479057-9d41e9ee57b05.mjs
+└── vitest.config.ts
+```
 
 ## 💻 Tech Stack
 HTML5 & CSS3: Structural vectors and custom styling variables.
